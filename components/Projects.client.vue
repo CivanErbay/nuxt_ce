@@ -1,5 +1,5 @@
 <template>
-  <section class="relative z-10">
+  <section id="projects" class="relative z-10">
     <h3
       v-scroll-reveal="{
         delay: 250,
@@ -36,12 +36,11 @@
         <nuxt-link
           :to="`/project/${project.path}`"
         >
-          <!-- <img
+          <img
             alt=""
             class="h-[300px] w-[450px] object-cover transition-all duration-300 hover:scale-105 grayscale hover:grayscale-0"
             :src="project.imgPath"
-          /> -->
-          Blub
+          />
         </nuxt-link>
         <a
           :href="project.link"

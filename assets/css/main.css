@@ -1,0 +1,34 @@
+@import "./base.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "rubik";
+  src: url("../../public/fonts/Rubik/static/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: "roboto-mono";
+  src: url("../../public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
+}
+
+
+#__nuxt {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}

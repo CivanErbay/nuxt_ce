@@ -1,75 +1,76 @@
 <template>
-  <div class="p-4 flex flex-col md:flex-row">
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 w-auto">
-      <div v-for="(image, index) in currProject.images" :key="index">
+  <div>
+    <div class="p-4 flex flex-col md:flex-row">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 w-auto">
+        <div v-for="(image, index) in currProject.images" :key="index">
+          <img
+            :src="image.src"
+            :alt="image.alt"
+            class="w-40 h-40 object-cover rounded-lg cursor-pointer"
+            @click="openImage(image)"
+          />
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-0 md:ml-8 md:w-1/3 flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold font-rubik">
+          {{ currProject.name }}
+        </h2>
+        <p class="text-gray-600 mt-2 text-justify">
+          {{ currProject.description }}
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-8 my-9">
+          <div class="text-gray-600 pt-2 border-t">
+            <p class="font-bold font-rubik">technology</p>
+            <p class="mt-2">
+              {{ currProject.technology }}
+            </p>
+          </div>
+          <div class="text-gray-600 pt-2 border-t">
+            <p class="font-bold font-rubik">client</p>
+            <p class="mt-2">
+              {{ currProject.employer }}
+            </p>
+          </div>
+          <div class="text-gray-600 pt-2 border-t">
+            <p class="font-bold font-rubik">year</p>
+            <p class="mt-2">
+              {{ currProject.year }}
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <nuxt-link to="/#projects" class="hover:-ml-1 transition-all duration-300">
+            <img alt="back button" class="h-[40px]" src="../../assets/back.svg"
+          /></nuxt-link>
+          <a
+            target="_blank"
+            :href="currProject.link"
+            :alt="`${currProject.name} website link`"
+            class="relative text-base font-bold py-2 group-hover:bg-white group/link"
+          >
+            visit website
+            <div
+              class="absolute bg-blue-100 h-0 bottom-1 group-hover/link:h-7 -z-10 transition-all w-full duration-300"
+            ></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      v-if="isImageModalOpen"
+      class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 z-50 overflow-scroll cursor-pointer"
+      @click="closeImage"
+    >
+      <div class="relative max-w-4xl max-h-4xl">
         <img
-          :src="image.src"
-          :alt="image.alt"
-          class="w-40 h-40 object-cover rounded-lg cursor-pointer"
-          @click="openImage(image)"
+          :src="selectedImage.src"
+          :alt="selectedImage.alt"
+          class="max-w-full max-h-full mx-auto"
         />
       </div>
-    </div>
-
-    <div class="mt-8 md:mt-0 md:ml-8 md:w-1/3 flex flex-col justify-between">
-      <h2 class="text-2xl font-semibold font-rubik">{{ currProject.name }}</h2>
-      <p class="text-gray-600 mt-2 text-justify">
-        {{ currProject.description }}
-      </p>
-
-      <div class="flex flex-col md:flex-row gap-8 my-9">
-        <div class="text-gray-600 pt-2 border-t">
-          <p class="font-bold font-rubik">technology</p>
-          <p class="mt-2">
-            {{ currProject.technology }}
-          </p>
-        </div>
-        <div class="text-gray-600 pt-2 border-t">
-          <p class="font-bold font-rubik">client</p>
-          <p class="mt-2">
-            {{ currProject.employer }}
-          </p>
-        </div>
-        <div class="text-gray-600 pt-2 border-t">
-          <p class="font-bold font-rubik">year</p>
-          <p class="mt-2">
-            {{ currProject.year }}
-          </p>
-        </div>
-      </div>
-      <div class="flex justify-between">
-        <nuxt-link
-          to="/#projects"
-          class="hover:-ml-1 transition-all duration-300"
-        >
-          <img alt="back button" class="h-[40px]" src="../assets/back.svg"
-        /></nuxt-link>
-        <a
-          target="_blank"
-          :href="currProject.link"
-          :alt="`${currProject.name} website link`"
-          class="relative text-base font-bold py-2 group-hover:bg-white group/link"
-        >
-          visit website
-          <div
-            class="absolute bg-blue-100 h-0 bottom-1 group-hover/link:h-7 -z-10 transition-all w-full duration-300"
-          ></div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div
-    v-if="isImageModalOpen"
-    class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 z-50 overflow-scroll cursor-pointer"
-    @click="closeImage"
-  >
-    <div class="relative max-w-4xl max-h-4xl">
-      <img
-        :src="selectedImage.src"
-        :alt="selectedImage.alt"
-        class="max-w-full max-h-full mx-auto"
-      />
     </div>
   </div>
 </template>
