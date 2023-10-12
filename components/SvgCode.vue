@@ -1,0 +1,46 @@
+<template>
+  <div>
+    <svg
+      ref="svg"
+      width="329"
+      height="284"
+      viewBox="0 0 329 284"
+      fill="none"
+    >
+      <path
+        ref="path"
+        d="M194 50H269M8 73H107M8 95.5H166M8 121.5H132.5M100 50H175M8 50H83M153.5 121.5H187M212.5 121.5H243M187 95.5H234.5M8 145H44M8 190.5H328.5M8 212.5H78M113 212.5H202.5M8 235.5H44M67 235.5H175M20.5 4.5L7.5 17.5L20.5 30.5M27 27L46.5 7.5M54 4.5L67 17.5L54 30.5M20.5 253.5L7.5 266.5L20.5 279.5M27 276L46.5 256.5M54 253.5L67 266.5L54 279.5"
+        stroke="black"
+        stroke-width="10"
+      />
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {
+  mounted() {
+    this.drawPath();
+  },
+  methods: {
+    drawPath() {
+      const path = this.$refs.path;
+      const length = path.getTotalLength();
+
+      path.style.transition = "none";
+      path.style.strokeDasharray = length;
+      path.style.strokeDashoffset = length;
+
+      // Trigger a reflow so the animation starts
+      path.getBoundingClientRect();
+
+      path.style.transition = "stroke-dashoffset 7s ease-in 1s";
+      path.style.strokeDashoffset = "0";
+    },
+  },
+};
+</script>
+
+<style scoped>
+/* Add any custom CSS styles here */
+</style>
