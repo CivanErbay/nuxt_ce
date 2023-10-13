@@ -10,3 +10,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+
+onMounted(()=> {
+  if (process.client) {
+    // register gsap scroll
+    
+  }
+})
+</script>

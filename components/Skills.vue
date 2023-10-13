@@ -1,12 +1,6 @@
 <template>
   <section class="flex flex-col">
     <h3
-      v-scroll-reveal="{
-        delay: 250,
-        distance: '150px',
-        duration: 2000,
-        origin: 'top',
-      }"
       class="font-rubik text-4xl md:text-7xl mb-9"
     >
       My Expertise
@@ -15,11 +9,6 @@
     <div class="flex flex-wrap md:gap-10">
       <div class="max-w-md">
         <div
-          v-scroll-reveal="{
-            delay: 250,
-            duration: 1000,
-            origin: 'left',
-          }"
           class="md:h-60"
         >
           <div class="flex items-center mb-6 mt-9">
@@ -48,12 +37,6 @@
         </div>
 
         <div
-          v-scroll-reveal="{
-            delay: 350,
-
-            duration: 2000,
-            origin: 'right',
-          }"
           class="md:h-60"
         >
           <div class="flex items-center mb-6 mt-9">
@@ -85,12 +68,6 @@
 
       <div class="max-w-md">
         <div
-          v-scroll-reveal="{
-            delay: 450,
-
-            duration: 2000,
-            origin: 'bottom',
-          }"
           class="md:h-60"
         >
           <div class="flex items-center mb-6 mt-9">

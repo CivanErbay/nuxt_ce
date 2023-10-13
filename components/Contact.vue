@@ -3,12 +3,6 @@
     <section class="flex min-h-full">
       <div class="w-full sm:w-1/2 md:w-[600px]">
         <h3
-          v-scroll-reveal="{
-            delay: 400,
-            distance: '30px',
-            duration: 1000,
-            origin: 'top',
-          }"
           class="font-rubik text-4xl md:text-7xl mb-9"
         >
           Contact
@@ -16,12 +10,6 @@
 
         <form ref="contactForm" v-if="!hasBeenSubmitted">
           <div
-            v-scroll-reveal="{
-              delay: 100,
-              distance: '30px',
-              duration: 1000,
-              origin: 'top',
-            }"
             class="mb-4"
           >
             <label for="name" class="block font-bold mb-2">Name:</label>
@@ -34,12 +22,6 @@
             />
           </div>
           <div
-            v-scroll-reveal="{
-              delay: 400,
-              distance: '30px',
-              duration: 1000,
-              origin: 'top',
-            }"
             class="mb-4"
           >
             <label for="email" class="block font-bold mb-2">Email:</label>
@@ -52,12 +34,6 @@
             />
           </div>
           <div
-            v-scroll-reveal="{
-              delay: 600,
-              distance: '30px',
-              duration: 1000,
-              origin: 'top',
-            }"
             class="mb-4"
           >
             <label for="message" class="block font-bold mb-2">Message:</label>
@@ -71,12 +47,6 @@
           </div>
 
           <button
-            v-scroll-reveal="{
-              delay: 1000,
-              distance: '30px',
-              duration: 1000,
-              origin: 'top',
-            }"
             @click.prevent="validateAndSubmit"
             v-if="!isSubmitting"
             class="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-md group w-fit"

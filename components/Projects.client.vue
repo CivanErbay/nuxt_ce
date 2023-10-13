@@ -1,23 +1,11 @@
 <template>
   <section id="projects" class="relative z-10">
     <h3
-      v-scroll-reveal="{
-        delay: 250,
-        distance: '150px',
-        duration: 2000,
-        origin: 'top',
-      }"
       class="font-rubik text-4xl md:text-7xl mb-9 mx-auto"
     >
       My Experience
     </h3>
     <p
-      v-scroll-reveal="{
-        delay: 250,
-        distance: '150px',
-        duration: 1000,
-        origin: 'bottom',
-      }"
       class="p-1 md:text-xl"
     >
       Relevant projects I was allowed to participate in
@@ -25,12 +13,6 @@
     <div class="flex flex-wrap items-center gap-10 py-[36px]">
       <div
         v-for="(project, index) in projects"
-        v-scroll-reveal="{
-          delay: 50 + index * 250,
-          distance: '150px',
-          duration: 1000,
-          origin: 'bottom',
-        }"
         class="relative cursor-pointer overflow-hidden group"
       >
         <nuxt-link
