@@ -49,7 +49,6 @@
 
 <script setup>
 import SvgCode from "./SvgCode.vue";
-/* import { vScrollReveal } from "vue-scroll-reveal";
- */</script>
+</script>
 
 <style scoped></style>

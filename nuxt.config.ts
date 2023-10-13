@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
+  plugins: [{ src: "~/plugins/scrollReveal.client.js", ssr: false }],
   postcss: {
     plugins: {
       tailwindcss: {},
