@@ -3055,6 +3055,11 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   "version" "4.2.11"
 
+"gsap@^3.11.5":
+  "integrity" "sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ=="
+  "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.12.2.tgz"
+  "version" "3.12.2"
+
 "gzip-size@^7.0.0":
   "integrity" "sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA=="
   "resolved" "https://registry.npmjs.org/gzip-size/-/gzip-size-7.0.0.tgz"

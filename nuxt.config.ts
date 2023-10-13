@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const title =
-  "Webdevelopment Frontend Backend Fullstack Javascript Node HTML CSS SEO Civan Erbay";
+  "Webdevelopment Frontend Backend Fullstack Javascript SEO Civan Erbay";
 const description =
   "Professional javascript HTML CSS Node vue webdesign frontend backend fullstack web development and seo services";
 
@@ -52,6 +52,10 @@ export default defineNuxtConfig({
       link: [],
     },
     pageTransition: { name: "page", mode: "out-in" },
+  },
+  plugins: [{ src: "~/plugins/gsap.js", ssr: false }],
+  build: {
+    transpile: ["gsap"],
   },
   postcss: {
     plugins: {

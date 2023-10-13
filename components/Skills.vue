@@ -1,22 +1,16 @@
 <template>
   <section class="flex flex-col">
-    <h3
-      class="font-rubik text-4xl md:text-7xl mb-9"
-    >
-      My Expertise
-    </h3>
+    <h3 class="font-rubik text-4xl md:text-7xl mb-9">My Expertise</h3>
 
     <div class="flex flex-wrap md:gap-10">
       <div class="max-w-md">
-        <div
-          class="md:h-60"
-        >
+        <div class="md:h-60 anim-appear">
           <div class="flex items-center mb-6 mt-9">
             <span
               class="flex items-center before:block before:absolute before:-inset-1 before:-skew-y-3 p-2 before:bg-pink-500 relative"
             >
               <img
-                alt=""
+                alt="whoami-icon"
                 class="h-10 z-10"
                 src="../assets/language-json-svgrepo-com.svg"
               />
@@ -32,20 +26,18 @@
           </p>
           <p class="p-1">
             Confident in handling complex project requirements, design and style
-            guides.
+            guides - ready to craft your personal digital landscape!
           </p>
         </div>
 
-        <div
-          class="md:h-60"
-        >
+        <div class="md:h-60">
           <div class="flex items-center mb-6 mt-9">
             <span
               class="flex items-center before:block before:absolute before:-inset-1 before:-skew-y-3 p-2 before:bg-[#2C49D8] relative"
             >
               <img
-                alt=""
                 class="h-10 z-10"
+                alt="display-icon"
                 src="../assets/monitor-svgrepo-com.svg"
               />
 
@@ -67,15 +59,13 @@
       </div>
 
       <div class="max-w-md">
-        <div
-          class="md:h-60"
-        >
+        <div class="md:h-60">
           <div class="flex items-center mb-6 mt-9">
             <span
               class="flex items-center before:block before:absolute before:-inset-1 before:-skew-y-3 p-2 before:bg-[#FF6B2B] relative"
             >
               <img
-                alt=""
+                alt="vuejs-icon"
                 class="h-10 z-10"
                 src="../assets/vuejs-svgrepo-com.svg"
               />
@@ -107,7 +97,6 @@
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

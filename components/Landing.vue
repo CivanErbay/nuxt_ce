@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col md:justify-center relative md:py-56">
   <h1
-      class="font-rubik text-5xl md:text-9xl"
+      class="font-rubik text-5xl md:text-9xl anim-appear"
     >
       Crafting Digital Landscapes.
     </h1> 
