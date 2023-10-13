@@ -90,9 +90,9 @@ import schwarmplanerImageThird from "@/assets/project-img/schwarmplaner/schwarm-
 import schwarmplanerImageFourth from "@/assets/project-img/schwarmplaner/schwarm-3.png";
 import schwarmplanerImageFifth from "@/assets/project-img/schwarmplaner/schwarm-4.png";
 
-import meineSwmImageFirst from "@/assets/project-img/mswm/mswm-1.png";
-import meineSwmImageSecond from "@/assets/project-img/mswm/mswm-2.png";
-import meineSwmImageThird from "@/assets/project-img/mswm/mswm-3.png";
+import meineSwmImageFirst from "@/assets/project-img/mswm/mswm1.png";
+import meineSwmImageSecond from "@/assets/project-img/mswm/mswm2.png";
+import meineSwmImageThird from "@/assets/project-img/mswm/mswm3.png";
 
 import swmImageFirst from "@/assets/project-img/swm/swm-1.png";
 import swmImageSecond from "@/assets/project-img/swm/swm-2.png";
