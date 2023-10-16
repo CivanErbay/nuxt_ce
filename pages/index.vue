@@ -33,7 +33,7 @@ function setupAnimation() {
           start: 'top 40%', // Adjust the start point as needed
           end: 'center center',
           once: true,
-          markers: true,
+          //markers: true,
         },
       }
     );
