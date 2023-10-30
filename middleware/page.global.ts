@@ -1,5 +1,5 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  const getDepth = (path) => {
+  /*   const getDepth = (path) => {
     return path.split("/").filter((seg) => seg.length > 0).length;
   };
 
@@ -12,5 +12,5 @@ export default defineNuxtRouteMiddleware((to, from) => {
   } else {
     to.meta.pageTransition = { name: "page-right", mode: "out-in" };
     from.meta.pageTransition = { name: "page-right", mode: "out-in" };
-  }
+  } */
 });
