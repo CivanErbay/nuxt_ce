@@ -29,7 +29,6 @@
 .page-right-enter-to {
   transform: translateX(-100%);
 } */
-
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s linear;
