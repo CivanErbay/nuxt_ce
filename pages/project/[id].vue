@@ -4,11 +4,17 @@
       <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 w-auto">
         <div v-for="(image, index) in currProject.images" :key="index">
           <img
+            v-show="imgLoaded"
+            @load="imgLoaded = true"
             :src="image.src"
             :alt="image.alt"
             class="w-40 h-40 object-cover rounded-lg cursor-pointer"
             @click="openImage(image)"
           />
+          <div
+            v-show="!imgLoaded"
+            class="w-40 h-40 animate-pulse rounded border-[16px] border-gray-400"
+          ></div>
         </div>
       </div>
 
@@ -41,7 +47,10 @@
           </div>
         </div>
         <div class="flex justify-between">
-          <nuxt-link to="/#projects" class="hover:-ml-1 transition-all duration-300">
+          <nuxt-link
+            to="/#projects"
+            class="hover:-ml-1 transition-all duration-300"
+          >
             <img alt="back button" class="h-[40px]" src="../../assets/back.svg"
           /></nuxt-link>
           <a
@@ -295,6 +304,7 @@ const currProject = computed(() => {
 
 const isImageModalOpen = ref(false);
 const selectedImage = ref(null);
+const imgLoaded = ref(false);
 
 function openImage(image) {
   selectedImage.value = image;
