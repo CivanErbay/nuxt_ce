@@ -22,7 +22,14 @@ const toLanding = () => {
     <h2>Kontakt</h2>
     <p>E-Mail: info@civan-erbay.de</p>
     <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-    <p>KimchiCode - Einzelunternehmen</p>
+     <p>E-Mail: hello@cartel-design.com</p>
+
+    <p>
+      Weitere Informationen finden Sie auf unseren Websites:
+      <a href="https://cartel-design.com" target="_blank" rel="noopener noreferrer">Cartel Design - Professionelle
+        Websites für Unternehmen</a> und
+      <a href="https://mycoachsite.com" target="_blank" rel="noopener noreferrer">MyCoachSite - Coaching & Beratung Websites</a>.
+    </p>
     <h2>EU-Streitschlichtung</h2>
     <p>
       Die Europäische Kommission stellt eine Plattform zur
