@@ -17,22 +17,23 @@ const toLanding = () => {
     <h4 class="font-rubik">Impressum</h4>
     <p>Angaben gemäß § 5 TMG</p>
     <p>Civan Erbay</p>
-    <p>Körnerstr. 116</p>
+    <p>Sömmeringstr. 73</p>
     <p>50823 Köln</p>
     <h2>Kontakt</h2>
     <p>E-Mail: info@civan-erbay.de</p>
     <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
 
 
-    <p>
+    <p class="flex flex-col mt-4">
       Weitere Informationen finden Sie auf unseren Websites:
-      <a href="https://cartel-design.com" target="_blank" rel="noopener noreferrer">Cartel Design - Professionelle
+      <a class="text-base font-bold mt-3" href="https://cartel-design.com" target="_blank" rel="noopener noreferrer">Cartel Design -
+        Professionelle
         Websites für Unternehmen</a> <br>
-      <p>E-Mail: hello@cartel-design.com</p>
-      und
-      <a href="https://mycoachsite.com" target="_blank" rel="noopener noreferrer">MyCoachSite - Coaching & Beratung Websites</a>
-      <br>
-     <p>E-Mail: hello@mycoachsite.com</p>
+    <p>E-Mail: hello@cartel-design.com</p>
+    <a class="text-base font-bold mt-3" href="https://mycoachsite.com" target="_blank" rel="noopener noreferrer">MyCoachSite - Coaching &
+      Beratung Websites</a>
+    <br>
+    <p>E-Mail: hello@mycoachsite.com</p>
     </p>
 
     <h2>EU-Streitschlichtung</h2>
